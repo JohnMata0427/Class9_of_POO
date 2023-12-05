@@ -1,4 +1,4 @@
-public class Poligono_Regular extends Regulares{
+public class Poligono_Regular extends Regulares_2D{
     public Poligono_Regular(String nombre) {
         super(nombre);
     }

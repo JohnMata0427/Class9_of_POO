@@ -1,24 +1,10 @@
-public class Triangulo_Equilatero extends Regulares{
+public class Triangulo_Equilatero extends Regulares_2D{
 
-    double altura;
-
-    public Triangulo_Equilatero(double lado, int lados) {
-        super(lado, lados);
+    public Triangulo_Equilatero(String nombre) {
+        super(nombre);
     }
 
-    public void setAltura(double altura) {
-        this.altura = lado * (Math.sqrt(3) / 2);
-    }
-
-    public double getAltura() {
-        return altura;
-    }
-
-    public double getArea() {
-        return (getLado() * getAltura()) / 2;
-    }
-
-    public double getPerimeter() {
-        return getLado() * getLados();
+    public void areaTriangulo_Equilatero(){
+        System.out.println("El área del triángulo equilatero es: " + (this.getLongutid_lado() * this.getLongutid_lado()) / 2);
     }
 }
