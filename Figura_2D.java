@@ -12,4 +12,8 @@ public class Figura_2D extends Figuras{
     public int getNum_lados() {
         return num_lados;
     }
+
+    public void imprimirNum_lados(){
+        System.out.println("El número de lados de la figura es: " + this.getNum_lados());
+    }
 }

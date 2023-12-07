@@ -16,4 +16,8 @@ public class Regulares_3D extends Figura_3D{
     public void imprimirLongitud_arista(){
         System.out.println("La longitud del arista de la figura es: " + this.getLongutid_arista());
     }
+
+    public void calcularArea(){
+        System.out.println("El area es: "+ this.getNum_caras() * this.getLongutid_arista() * this.getLongutid_arista());
+    }
 }
