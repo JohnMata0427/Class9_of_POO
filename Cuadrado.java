@@ -5,8 +5,7 @@ public class Cuadrado extends Poligono_Regular{
         super(nombre);
     }
 
-    private void setDiagonal(double diagonal) {
-        diagonal = getLongutid_lado() * Math.sqrt(2);
+    public void setDiagonal(double diagonal) {
         this.diagonal = diagonal;
     }
 
@@ -15,6 +14,12 @@ public class Cuadrado extends Poligono_Regular{
     }
 
     public void imprimirDiagonal() {
+        diagonal = getLongutid_lado() * Math.sqrt(2);
+        setDiagonal(diagonal);
         System.out.println("La diagonal del cuadrado es: " + getDiagonal());
+    }
+
+    public void imprimirArea() {
+        System.out.println("La area del cuadrado es: " + (getLongutid_lado() * getLongutid_lado()));
     }
 }

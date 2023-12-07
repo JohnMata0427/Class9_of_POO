@@ -17,8 +17,7 @@ public class Regulares_2D extends Figura_2D{
         System.out.println("La longitud del lado de la figura es: " + this.getLongutid_lado());
     }
 
-    private void setPerimetro(double perimetro) {
-        perimetro = this.getNum_lados() * this.getLongutid_lado();
+    public void setPerimetro(double perimetro) {
         this.perimetro = perimetro;
     }
 
@@ -27,6 +26,8 @@ public class Regulares_2D extends Figura_2D{
     }
 
     public void calcularPerimetro(){
+        perimetro = this.getNum_lados() * this.getLongutid_lado();
+        setPerimetro(perimetro);
         System.out.println("El perimetro es: "+ this.getPerimetro());
     }
 }

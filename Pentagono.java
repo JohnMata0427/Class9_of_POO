@@ -6,8 +6,7 @@ public class Pentagono extends Poligono_Regular{
         super(nombre);
     }
 
-    private void setAngulo_central(double angulo_central) {
-        angulo_central = 360 / getNum_lados();
+    public void setAngulo_central(double angulo_central) {
         this.angulo_central = angulo_central;
     }
 
@@ -16,6 +15,12 @@ public class Pentagono extends Poligono_Regular{
     }
 
     public void imprimirAngulo_central() {
+        angulo_central = 360 / getNum_lados();
+        setAngulo_central(angulo_central);
         System.out.println("El angulo central del pentagono es: " + getAngulo_central());
+    }
+
+    public void imprimirArea() {
+        System.out.println("El area del pentagono es: " + (getPerimetro() * getApotema()) / 2);
     }
 }
