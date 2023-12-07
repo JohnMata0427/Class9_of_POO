@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int opcion, opcion2, opcion3;
 
         do {
@@ -74,9 +74,11 @@ public class Main{
                                     nuevo_rectangulo.setLongutid_lado1(scanner.nextDouble());
                                     System.out.print("Ingresa la longitud del lado 2 del rectangulo: ");
                                     nuevo_rectangulo.setLongutid_lado2(scanner.nextDouble());
+                                    nuevo_rectangulo.setNum_lados(4);
                                     System.out.println("");
 
                                     nuevo_rectangulo.imprimirNombre();
+                                    nuevo_rectangulo.imprimirNum_lados();
                                     nuevo_rectangulo.imprimirPerimetroRectangulo();
                                     nuevo_rectangulo.imprimirAreaRectangulo();
                                     break;
@@ -88,9 +90,11 @@ public class Main{
                                     nuevo_triangulo.setLongutid_lado2(scanner.nextDouble());
                                     System.out.print("Ingresa la longitud del lado 3 del triangulo escaleno: ");
                                     nuevo_triangulo.setLongitud_lado3(scanner.nextDouble());
+                                    nuevo_triangulo.setNum_lados(3);
                                     System.out.println("");
 
                                     nuevo_triangulo.imprimirNombre();
+                                    nuevo_triangulo.imprimirNum_lados();
                                     nuevo_triangulo.perimetro_te();
                                     break;
                             }
@@ -103,10 +107,12 @@ public class Main{
                     System.out.print(" * Ingrese la longitud de la arista del cubo: ");
                     Cubo nuevo_cubo = new Cubo("Cubo");
                     nuevo_cubo.setLongitud_ladocubo(scanner.nextDouble());
-                    nuevo_cubo.imprimirLongitud_arista();
+                    nuevo_cubo.setNum_caras(6);
                     System.out.println("");
 
                     nuevo_cubo.imprimirNombre();
+                    nuevo_cubo.imprimirlongitud_ladocubo();
+                    nuevo_cubo.imprimirNum_caras();
                     nuevo_cubo.volumenCubo();
                     break;
             }
