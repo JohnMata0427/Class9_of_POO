@@ -19,6 +19,7 @@ public class Cuadrado extends Poligono_Regular{
         System.out.println("La diagonal del cuadrado es: " + getDiagonal());
     }
 
+    @Override
     public void imprimirArea() {
         System.out.println("La area del cuadrado es: " + (getLongutid_lado() * getLongutid_lado()));
     }

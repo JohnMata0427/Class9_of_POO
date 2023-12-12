@@ -79,8 +79,8 @@ public class Main{
 
                                     nuevo_rectangulo.imprimirNombre();
                                     nuevo_rectangulo.imprimirNum_lados();
-                                    nuevo_rectangulo.imprimirPerimetroRectangulo();
-                                    nuevo_rectangulo.imprimirAreaRectangulo();
+                                    nuevo_rectangulo.imprimirPerimetro();
+                                    nuevo_rectangulo.imprimirArea();
                                     break;
                                 case 2:
                                 Triangulo_escaleno nuevo_triangulo = new Triangulo_escaleno("Triangulo Escaleno");
@@ -95,7 +95,8 @@ public class Main{
 
                                     nuevo_triangulo.imprimirNombre();
                                     nuevo_triangulo.imprimirNum_lados();
-                                    nuevo_triangulo.perimetro_te();
+                                    nuevo_triangulo.imprimirPerimetro();
+                                    nuevo_triangulo.imprimirArea();
                                     break;
                             }
                             break;
@@ -113,6 +114,7 @@ public class Main{
                     nuevo_cubo.imprimirNombre();
                     nuevo_cubo.imprimirlongitud_ladocubo();
                     nuevo_cubo.imprimirNum_caras();
+                    nuevo_cubo.imprimirArea();
                     nuevo_cubo.volumenCubo();
                     break;
             }

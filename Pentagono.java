@@ -20,7 +20,13 @@ public class Pentagono extends Poligono_Regular{
         System.out.println("El angulo central del pentagono es: " + getAngulo_central());
     }
 
+    @Override
     public void imprimirArea() {
         System.out.println("El area del pentagono es: " + (getPerimetro() * getApotema()) / 2);
+    }
+
+    @Override
+    public void imprimirPerimetro() {
+        System.out.println("El perimetro del pentagono es: " + getNum_lados() * getLongutid_lado());
     }
 }
