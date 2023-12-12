@@ -25,7 +25,7 @@ public class Triangulo_escaleno extends Irregulares{
     @Override
     public void imprimirArea() {
         setSemiperimetro((this.getLongutid_lado1()+this.getLongutid_lado2()+this.getLongitud_lado3())/2);
-        double area = Math.sqrt(getSemiperimetro()*(getSemiperimetro()-this.getLongutid_lado1())*(getSemiperimetro()-this.getLongutid_lado2())*(getSemiperimetro()-this.getLongitud_lado3()));
+        double area = Math.sqrt(this.getSemiperimetro()*(this.getSemiperimetro()-this.getLongutid_lado1())*(this.getSemiperimetro()-this.getLongutid_lado2())*(this.getSemiperimetro()-this.getLongitud_lado3()));
         System.out.println("El area del triangulo escaleno es: "+ area);
     }
 

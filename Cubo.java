@@ -8,6 +8,10 @@ public class Cubo extends Regulares_3D{
         System.out.println("El volumen del cubo es: " +(this.getlongitud_ladocubo()*this.getlongitud_ladocubo()*this.getlongitud_ladocubo()));
     }
 
+    public int volumenCubo(int longitud_ladocubo){
+        return longitud_ladocubo*longitud_ladocubo*longitud_ladocubo;
+    }
+
     @Override
     public void imprimirArea() {
         System.out.println("El area del cubo es: "+(6*(this.getlongitud_ladocubo()*this.getlongitud_ladocubo())));
